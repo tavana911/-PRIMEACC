@@ -41,6 +41,22 @@
         .group:hover .group-hover\:rotate-180 {
             transform: rotate(180deg);
         }
+
+        @media (max-width: 768px) {
+            body {
+                min-width: 320px;
+                overflow-x: hidden;
+            }
+            .group-hover\:block {
+                display: block !important;
+                position: static !important;
+                width: 100% !important;
+                box-shadow: none !important;
+            }
+            .group-hover\:rotate-180 {
+                transform: none !important;
+            }
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
