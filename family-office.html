@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Office Services - PRIMEACC</title>
+    <meta name="description" content="Tailored wealth management and financial guidance for families to grow wealth, preserve legacy, and achieve long-term goals.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#1e3a8a",
+                        accent: "#3b82f6",
+                        light: "#f8fafc",
+                        dark: "#1e293b"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .group:hover .group-hover\:block {
+            display: block !important;
+        }
+        .group-hover\:block {
+            display: none;
+        }
+        .group-hover\:rotate-180 {
+            transition: transform 0.2s ease-in-out;
+        }
+        .group:hover .group-hover\:rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-xl">P</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">PRIME<span class="text-secondary">ACC</span></h1>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="md:flex hidden bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition-colors">
+                    Get Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-50 to-purple-100 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-users text-white text-3xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">Family Office Services</h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Tailored financial guidance for families, empowering them to grow their wealth, preserve their legacy, and achieve multi-generational goals with confidence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">Comprehensive Wealth Management for Families</h2>
+                    <p class="text-gray-600 mb-4 text-lg">
+                        Family office services provide comprehensive financial management tailored to your family's unique needs. We serve as a trusted advisor, managing finances, coordinating professionals, and ensuring smooth wealth transfer across generations.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Whether you're building wealth or preserving a family legacy, our family office experts provide the strategic guidance and operational support you need.
+                    </p>
+                    <button class="bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors">
+                        Schedule Consultation
+                    </button>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/400?random=13" alt="Family Office Services" class="rounded-xl shadow-xl w-full">
+                </div>
+            </div>
+
+            <!-- Core Services -->
+            <div class="bg-purple-50 p-12 rounded-xl mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Our Family Office Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-piggy-bank text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Wealth Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive wealth planning and management strategies to grow and preserve family assets.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Financial planning</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Investment coordination</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Asset allocation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Portfolio management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-tasks text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Financial Operations</h3>
+                        <p class="text-gray-600 mb-4">
+                            Day-to-day financial management and administrative services for family entities.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Accounting services</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Bill payment management</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Tax preparation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Financial reporting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-scroll text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Estate & Trust Planning</h3>
+                        <p class="text-gray-600 mb-4">
+                            Strategic planning for wealth transfer and legacy preservation across generations.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Estate planning</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Trust administration</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Succession planning</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Probate services</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Charitable Planning</h3>
+                        <p class="text-gray-600 mb-4">
+                            Strategies to support charitable causes while optimizing tax benefits for your family.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Charitable giving strategies</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Foundation management</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Donor advised funds</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Tax-efficient giving</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-handshake text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Advisor Coordination</h3>
+                        <p class="text-gray-600 mb-4">
+                            Coordination of all professional advisors to ensure alignment and comprehensive service.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Attorney coordination</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Investment manager liaison</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Insurance coordination</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Integrated planning</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Risk Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive risk assessment and mitigation strategies to protect family assets.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Insurance planning</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Liability protection</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Asset protection</li>
+                            <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i> Contingency planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Benefits of Family Office Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Single Point of Contact</h3>
+                            <p class="text-gray-600">One advisor coordinating all family financial matters for simplicity and efficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Cohesive Strategy</h3>
+                            <p class="text-gray-600">Integrated approach ensuring all financial decisions align with family goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Legacy Preservation</h3>
+                            <p class="text-gray-600">Protect and grow family wealth for current and future generations.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Tax Optimization</h3>
+                            <p class="text-gray-600">Strategic planning to minimize taxes and maximize wealth transfer.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Generational Expertise</h3>
+                            <p class="text-gray-600">Guidance on preparing younger family members for wealth management.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Peace of Mind</h3>
+                            <p class="text-gray-600">Know your financial affairs are well-managed and professionally coordinated.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Scenarios -->
+            <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-12 rounded-xl">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Who Benefits from Family Office Services?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">High-Net-Worth Families</h3>
+                        <p class="text-gray-600">Comprehensive coordination of complex financial and investment portfolios.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Successful Entrepreneurs</h3>
+                        <p class="text-gray-600">Transition from business wealth to diversified family assets and legacy planning.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Multi-Generational Families</h3>
+                        <p class="text-gray-600">Coordination across family members and estate transition management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Preserve Your Family's Legacy</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Let our family office experts create a coordinated strategy for your family's financial future.
+            </p>
+            <button class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                Schedule Family Consultation
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">PRIMEACC</h4>
+                    <p class="text-gray-400 text-sm">Your committed financial advisor & business consulting partner</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <div class="space-y-2">
+                        <!-- CFO + Client Advisory -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                CFO Advisory
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="cfo-advisory.html#strategic-finance" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Strategic Finance</a>
+                                <a href="cfo-advisory.html#financial-reporting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Reporting</a>
+                                <a href="cfo-advisory.html#process-optimization" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Process Optimization</a>
+                                <a href="cfo-advisory.html#cash-flow-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Management</a>
+                                <a href="cfo-advisory.html#ma-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">M&A Advisory</a>
+                                <a href="cfo-advisory.html#financial-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Advisory</a>
+                            </div>
+                        </div>
+
+                        <!-- Audit & Assurance -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Audit & Assurance
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="audit-assurance.html#financial-statement-audits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Statement Audits</a>
+                                <a href="audit-assurance.html#reviews-compilations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Reviews & Compilations</a>
+                                <a href="audit-assurance.html#forecasts-projections" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Forecasts & Projections</a>
+                                <a href="audit-assurance.html#cash-flow-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Analysis</a>
+                                <a href="audit-assurance.html#operational-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Operational Analysis</a>
+                                <a href="audit-assurance.html#special-audits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Audits</a>
+                            </div>
+                        </div>
+
+                        <!-- Tax -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Tax
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="tax-services.html#tax-planning" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Planning</a>
+                                <a href="tax-services.html#tax-prep-compliance" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Preparation & Compliance</a>
+                                <a href="tax-services.html#tax-structuring" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Structuring</a>
+                                <a href="tax-services.html#international-tax" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">International Tax</a>
+                                <a href="tax-services.html#tax-controversy" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Controversy</a>
+                                <a href="tax-services.html#payroll-employment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Payroll & Employment Taxes</a>
+                            </div>
+                        </div>
+
+                        <!-- Family Office -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Family Office
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="family-office.html#wealth-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Wealth Management</a>
+                                <a href="family-office.html#financial-operations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Operations</a>
+                                <a href="family-office.html#estate-trust" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Estate & Trust Planning</a>
+                                <a href="family-office.html#charitable-planning" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Charitable Planning</a>
+                                <a href="family-office.html#advisor-coordination" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Advisor Coordination</a>
+                                <a href="family-office.html#risk-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Risk Management</a>
+                            </div>
+                        </div>
+
+                        <!-- Employment -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Employment
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="employment-services.html#job-placement" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Job Placement</a>
+                                <a href="employment-services.html#talent-recruitment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Talent Recruitment</a>
+                                <a href="employment-services.html#career-consulting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Career Consulting</a>
+                                <a href="employment-services.html#executive-search" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Executive Search</a>
+                                <a href="employment-services.html#professional-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Professional Development</a>
+                                <a href="employment-services.html#ongoing-support" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Ongoing Support</a>
+                            </div>
+                        </div>
+
+                        <!-- Real Estate -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Real Estate
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="real-estate-services.html#residential" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Residential Real Estate</a>
+                                <a href="real-estate-services.html#commercial" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Commercial Real Estate</a>
+                                <a href="real-estate-services.html#industrial" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Industrial Real Estate</a>
+                                <a href="real-estate-services.html#land-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Land & Development</a>
+                                <a href="real-estate-services.html#special-purpose" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Purpose Properties</a>
+                                <a href="real-estate-services.html#investment-strategies" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Investment Strategies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="mailto:info@primeaccconsulting.com" class="hover:text-white">info@primeaccconsulting.com</a></li>
+                        <li><a href="tel:+19302772877" class="hover:text-white">(930) 277-2877</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                &copy; 2026 PRIMEACC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

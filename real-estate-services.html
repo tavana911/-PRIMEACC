@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services - PRIMEACC</title>
+    <meta name="description" content="Comprehensive real estate solutions for residential, commercial, industrial, and specialized properties.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#1e3a8a",
+                        accent: "#3b82f6",
+                        light: "#f8fafc",
+                        dark: "#1e293b"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .group:hover .group-hover\:block {
+            display: block !important;
+        }
+        .group-hover\:block {
+            display: none;
+        }
+        .group-hover\:rotate-180 {
+            transition: transform 0.2s ease-in-out;
+        }
+        .group:hover .group-hover\:rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-xl">P</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">PRIME<span class="text-secondary">ACC</span></h1>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="md:flex hidden bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition-colors">
+                    Get Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-amber-50 to-amber-100 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="w-16 h-16 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-building text-white text-3xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">Real Estate Services</h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Comprehensive real estate solutions spanning residential, commercial, industrial, and specialized properties. From investment analysis to transaction management, we guide you through every step.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">Strategic Real Estate Solutions</h2>
+                    <p class="text-gray-600 mb-4 text-lg">
+                        Our real estate services provide comprehensive guidance for property acquisition, investment analysis, management, and disposition. Whether you're an individual buyer, developer, or institutional investor, we deliver expert advice tailored to your objectives.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        We combine market expertise with financial acumen to help you make informed real estate decisions that maximize returns and minimize risks.
+                    </p>
+                    <button class="bg-amber-700 text-white px-8 py-3 rounded-lg font-medium hover:bg-amber-800 transition-colors">
+                        Schedule Consultation
+                    </button>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/400?random=15" alt="Real Estate Services" class="rounded-xl shadow-xl w-full">
+                </div>
+            </div>
+
+            <!-- Property Types -->
+            <div class="bg-amber-50 p-12 rounded-xl mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Property Types We Serve</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Property 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Residential Real Estate</h3>
+                        <p class="text-gray-600 mb-4">
+                            Services for single-family homes, apartments, condominiums, and residential developments.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Buyer representation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Seller marketing</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Market analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Valuation services</li>
+                        </ul>
+                    </div>
+
+                    <!-- Property 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-store text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Commercial Real Estate</h3>
+                        <p class="text-gray-600 mb-4">
+                            Office spaces, retail properties, shopping centers, and mixed-use developments.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Lease negotiation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Tenant representation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Investment analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Portfolio management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Property 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-industry text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Industrial Real Estate</h3>
+                        <p class="text-gray-600 mb-4">
+                            Warehouses, manufacturing facilities, distribution centers, and flex space.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Facility identification</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Lease structuring</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Operational analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> ROI optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Property 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-map text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Land & Development</h3>
+                        <p class="text-gray-600 mb-4">
+                            Raw land acquisition, development projects, and rezoning opportunities.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Feasibility studies</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Development planning</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Entitlement support</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Project management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Property 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-hospital text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Special Purpose Properties</h3>
+                        <p class="text-gray-600 mb-4">
+                            Hotels, healthcare facilities, senior living, and other specialized properties.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Asset management</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Operator search</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Performance metrics</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Exit strategy</li>
+                        </ul>
+                    </div>
+
+                    <!-- Property 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-pie text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Investment Strategies</h3>
+                        <p class="text-gray-600 mb-4">
+                            Portfolio construction and diversified real estate investment strategies.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Deal sourcing</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Investment analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Risk management</li>
+                            <li class="flex items-start"><i class="fas fa-check text-amber-700 mr-2 mt-1"></i> Performance tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Comprehensive Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-search text-amber-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Market Research & Analysis</h3>
+                            <p class="text-gray-600">Comprehensive market data and analysis to inform investment decisions and strategy.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-handshake text-amber-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Transaction Management</h3>
+                            <p class="text-gray-600">Complete transaction support from due diligence through closing and beyond.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-calculator text-amber-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Financial Modeling</h3>
+                            <p class="text-gray-600">Sophisticated analysis to evaluate returns and structure optimal deals.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-gavel text-amber-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Legal Coordination</h3>
+                            <p class="text-gray-600">Coordination with real estate attorneys for smooth transactions and compliance.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-tasks text-amber-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Property Management Oversight</h3>
+                            <p class="text-gray-600">Supervision of property management to ensure operational excellence.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-chart-line text-amber-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Portfolio Reporting</h3>
+                            <p class="text-gray-600">Regular performance reporting and strategic recommendations for your portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Section -->
+            <div class="bg-gradient-to-r from-amber-50 to-amber-100 p-12 rounded-xl">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Why Choose PRIMEACC for Real Estate?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Industry Expertise</h3>
+                        <p class="text-gray-600">Decades of combined experience in all real estate sectors and markets.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Financial Acumen</h3>
+                        <p class="text-gray-600">Deep financial analysis capabilities to maximize returns and manage risk.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Network Access</h3>
+                        <p class="text-gray-600">Extensive relationships with investors, developers, and market participants.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Comprehensive Support</h3>
+                        <p class="text-gray-600">End-to-end guidance from initial opportunity to successful exit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-amber-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Unlock Real Estate Opportunities</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Let our real estate experts guide you to profitable investments and successful transactions.
+            </p>
+            <button class="bg-white text-amber-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                Schedule Real Estate Consultation
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">PRIMEACC</h4>
+                    <p class="text-gray-400 text-sm">Your committed financial advisor & business consulting partner</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <div class="space-y-2">
+                        <!-- CFO + Client Advisory -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                CFO Advisory
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="cfo-advisory.html#financial-reporting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Reporting</a>
+                                <a href="cfo-advisory.html#process-optimization" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Process Optimization</a>
+                                <a href="cfo-advisory.html#cash-flow-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Management</a>
+                                <a href="cfo-advisory.html#ma-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">M&A Advisory</a>
+                                <a href="cfo-advisory.html#financial-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Advisory</a>
+                            </div>
+                        </div>
+
+                        <!-- Audit & Assurance -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Audit & Assurance
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="audit-assurance.html#reviews-compilations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Reviews & Compilations</a>
+                                <a href="audit-assurance.html#forecasts-projections" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Forecasts & Projections</a>
+                                <a href="audit-assurance.html#cash-flow-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Analysis</a>
+                                <a href="audit-assurance.html#operational-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Operational Analysis</a>
+                                <a href="audit-assurance.html#special-audits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Audits</a>
+                            </div>
+                        </div>
+
+                        <!-- Tax -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Tax
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="tax-services.html#tax-prep-compliance" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Preparation & Compliance</a>
+                                <a href="tax-services.html#tax-structuring" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Structuring</a>
+                                <a href="tax-services.html#international-tax" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">International Tax</a>
+                                <a href="tax-services.html#tax-controversy" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Controversy</a>
+                                <a href="tax-services.html#payroll-employment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Payroll & Employment Taxes</a>
+                            </div>
+                        </div>
+
+                        <!-- Family Office -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Family Office
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="family-office.html#wealth-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Wealth Management</a>
+                                <a href="family-office.html#financial-operations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Operations</a>
+                                <a href="family-office.html#estate-trust" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Estate & Trust Planning</a>
+                                <a href="family-office.html#charitable-planning" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Charitable Planning</a>
+                                <a href="family-office.html#advisor-coordination" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Advisor Coordination</a>
+                                <a href="family-office.html#risk-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Risk Management</a>
+                            </div>
+                        </div>
+
+                        <!-- Employment -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Employment
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="employment-services.html#job-placement" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Job Placement</a>
+                                <a href="employment-services.html#talent-recruitment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Talent Recruitment</a>
+                                <a href="employment-services.html#career-consulting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Career Consulting</a>
+                                <a href="employment-services.html#executive-search" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Executive Search</a>
+                                <a href="employment-services.html#professional-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Professional Development</a>
+                                <a href="employment-services.html#ongoing-support" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Ongoing Support</a>
+                            </div>
+                        </div>
+
+                        <!-- Real Estate -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Real Estate
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="real-estate-services.html#residential" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Residential Real Estate</a>
+                                <a href="real-estate-services.html#commercial" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Commercial Real Estate</a>
+                                <a href="real-estate-services.html#industrial" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Industrial Real Estate</a>
+                                <a href="real-estate-services.html#land-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Land & Development</a>
+                                <a href="real-estate-services.html#special-purpose" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Purpose Properties</a>
+                                <a href="real-estate-services.html#investment-strategies" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Investment Strategies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="mailto:info@primeaccconsulting.com" class="hover:text-white">info@primeaccconsulting.com</a></li>
+                        <li><a href="tel:+19302772877" class="hover:text-white">(930) 277-2877</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                &copy; 2026 PRIMEACC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

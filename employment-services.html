@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Services - PRIMEACC</title>
+    <meta name="description" content="Connect top talent with outstanding career opportunities. Expert job placement and career consulting services.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#1e3a8a",
+                        accent: "#3b82f6",
+                        light: "#f8fafc",
+                        dark: "#1e293b"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .group:hover .group-hover\:block {
+            display: block !important;
+        }
+        .group-hover\:block {
+            display: none;
+        }
+        .group-hover\:rotate-180 {
+            transition: transform 0.2s ease-in-out;
+        }
+        .group:hover .group-hover\:rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-xl">P</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">PRIME<span class="text-secondary">ACC</span></h1>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="md:flex hidden bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition-colors">
+                    Get Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-50 to-red-100 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-handshake text-white text-3xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">Employment Services</h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Connect top talent with outstanding career opportunities that match their skills, experience, and career aspirations. We build lasting connections between businesses and exceptional professionals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">Your Gateway to Career Success</h2>
+                    <p class="text-gray-600 mb-4 text-lg">
+                        Our employment services connect qualified professionals with employers looking for their specific skills and experience. We understand both sides of the hiring equation, ensuring successful placements that benefit everyone.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Whether you're seeking your next opportunity or looking to build a team, we provide expert guidance, thorough matching, and ongoing support.
+                    </p>
+                    <button class="bg-red-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors">
+                        Explore Opportunities
+                    </button>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/400?random=14" alt="Employment Services" class="rounded-xl shadow-xl w-full">
+                </div>
+            </div>
+
+            <!-- Core Services -->
+            <div class="bg-red-50 p-12 rounded-xl mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Our Employment Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-briefcase text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Job Placement</h3>
+                        <p class="text-gray-600 mb-4">
+                            Expert matching of qualified candidates with ideal career opportunities across multiple industries.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Candidate screening</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Interview preparation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Placement coordination</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Onboarding support</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Talent Recruitment</h3>
+                        <p class="text-gray-600 mb-4">
+                            Strategic recruitment solutions to help businesses find and hire skilled professionals for critical roles.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Talent sourcing</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Job posting optimization</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Candidate evaluation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Offer negotiation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Career Consulting</h3>
+                        <p class="text-gray-600 mb-4">
+                            Personalized guidance to help you navigate career transitions and achieve professional growth.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Career path planning</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Resume development</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Interview coaching</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Salary negotiation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-search text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Executive Search</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive recruitment for executive and senior management positions requiring specialized expertise.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Candidate sourcing</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Executive screening</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Reference checking</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Placement finalization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Professional Development</h3>
+                        <p class="text-gray-600 mb-4">
+                            Training and development programs to enhance professional skills and career advancement.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Skills training</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Leadership development</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Certification prep</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Mentorship programs</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-headset text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Ongoing Support</h3>
+                        <p class="text-gray-600 mb-4">
+                            Continuous support to ensure successful employment outcomes and professional satisfaction.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> 90-day follow-up</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Career counseling</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Issue resolution</li>
+                            <li class="flex items-start"><i class="fas fa-check text-red-600 mr-2 mt-1"></i> Long-term guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Why Choose Our Employment Services?</h2>
+                
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-dark mb-8 text-center">For Job Seekers</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Career Guidance</h4>
+                                <p class="text-gray-600">Expert advice to help you find the right career path and opportunities.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Quality Opportunities</h4>
+                                <p class="text-gray-600">Access to vetted positions matching your skills and career goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Interview Preparation</h4>
+                                <p class="text-gray-600">Coaching and support to help you ace interviews and land positions.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Ongoing Support</h4>
+                                <p class="text-gray-600">Continued assistance after placement to ensure job satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-dark mb-8 text-center">For Employers</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Qualified Candidates</h4>
+                                <p class="text-gray-600">Access to screened, qualified professionals for all levels of positions.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Time Savings</h4>
+                                <p class="text-gray-600">Streamlined recruitment process reduces hiring time and costs.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Better Retention</h4>
+                                <p class="text-gray-600">Thorough matching leads to better employee retention and satisfaction.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-dark mb-2">Industry Expertise</h4>
+                                <p class="text-gray-600">Deep knowledge of industry-specific talent requirements and trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries -->
+            <div class="bg-gradient-to-r from-red-50 to-red-100 p-12 rounded-xl">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Industries We Serve</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-industry text-red-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark mb-2">Finance & Accounting</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-laptop text-red-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark mb-2">Technology</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-heartbeat text-red-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark mb-2">Healthcare</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-graduation-cap text-red-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark mb-2">Education</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-red-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Next Opportunity?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Connect with our employment specialists to explore career opportunities that match your aspirations.
+            </p>
+            <button class="bg-white text-red-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                Explore Job Opportunities
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">PRIMEACC</h4>
+                    <p class="text-gray-400 text-sm">Your committed financial advisor & business consulting partner</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <div class="space-y-2">
+                        <!-- CFO + Client Advisory -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                CFO Advisory
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="cfo-advisory.html#financial-reporting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Reporting</a>
+                                <a href="cfo-advisory.html#process-optimization" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Process Optimization</a>
+                                <a href="cfo-advisory.html#cash-flow-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Management</a>
+                                <a href="cfo-advisory.html#ma-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">M&A Advisory</a>
+                                <a href="cfo-advisory.html#financial-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Advisory</a>
+                            </div>
+                        </div>
+
+                        <!-- Audit & Assurance -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Audit & Assurance
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="audit-assurance.html#reviews-compilations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Reviews & Compilations</a>
+                                <a href="audit-assurance.html#forecasts-projections" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Forecasts & Projections</a>
+                                <a href="audit-assurance.html#cash-flow-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Analysis</a>
+                                <a href="audit-assurance.html#operational-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Operational Analysis</a>
+                                <a href="audit-assurance.html#special-audits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Audits</a>
+                            </div>
+                        </div>
+
+                        <!-- Tax -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Tax
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="tax-services.html#tax-prep-compliance" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Preparation & Compliance</a>
+                                <a href="tax-services.html#tax-structuring" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Structuring</a>
+                                <a href="tax-services.html#international-tax" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">International Tax</a>
+                                <a href="tax-services.html#tax-controversy" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Controversy</a>
+                                <a href="tax-services.html#payroll-employment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Payroll & Employment Taxes</a>
+                            </div>
+                        </div>
+
+                        <!-- Family Office -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Family Office
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="family-office.html#wealth-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Wealth Management</a>
+                                <a href="family-office.html#financial-operations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Operations</a>
+                                <a href="family-office.html#estate-trust" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Estate & Trust Planning</a>
+                                <a href="family-office.html#charitable-planning" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Charitable Planning</a>
+                                <a href="family-office.html#advisor-coordination" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Advisor Coordination</a>
+                                <a href="family-office.html#risk-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Risk Management</a>
+                            </div>
+                        </div>
+
+                        <!-- Employment -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Employment
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="employment-services.html#job-placement" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Job Placement</a>
+                                <a href="employment-services.html#talent-recruitment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Talent Recruitment</a>
+                                <a href="employment-services.html#career-consulting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Career Consulting</a>
+                                <a href="employment-services.html#executive-search" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Executive Search</a>
+                                <a href="employment-services.html#professional-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Professional Development</a>
+                                <a href="employment-services.html#ongoing-support" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Ongoing Support</a>
+                            </div>
+                        </div>
+
+                        <!-- Real Estate -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Real Estate
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="real-estate-services.html#residential" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Residential Real Estate</a>
+                                <a href="real-estate-services.html#commercright-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44"
+                                <a href="real-estate-services.html#land-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Land & Development</a>
+                                <a href="real-estate-services.html#special-purpose" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Purpose Properties</a>
+                                <a href="real-estate-services.html#investment-strategies" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Investment Strategies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="mailto:info@primeaccconsulting.com" class="hover:text-white">info@primeaccconsulting.com</a></li>
+                        <li><a href="tel:+19302772877" class="hover:text-white">(930) 277-2877</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                &copy; 2026 PRIMEACC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

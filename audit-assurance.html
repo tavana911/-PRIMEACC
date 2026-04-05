@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit & Assurance Services - PRIMEACC</title>
+    <meta name="description" content="Comprehensive audit and assurance services including financial statement audits, reviews, compilations, and forecasting.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#1e3a8a",
+                        accent: "#3b82f6",
+                        light: "#f8fafc",
+                        dark: "#1e293b"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .group:hover .group-hover\:block {
+            display: block !important;
+        }
+        .group-hover\:block {
+            display: none;
+        }
+        .group-hover\:rotate-180 {
+            transition: transform 0.2s ease-in-out;
+        }
+        .group:hover .group-hover\:rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-xl">P</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">PRIME<span class="text-secondary">ACC</span></h1>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="md:flex hidden bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition-colors">
+                    Get Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-50 to-green-100 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-check-circle text-white text-3xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">Audit & Assurance Services</h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Enable better decision making and foster stakeholder trust through comprehensive financial statements, audits, and financial forecasts. Our assurance services provide the credibility your business needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">Comprehensive Assurance Services</h2>
+                    <p class="text-gray-600 mb-4 text-lg">
+                        Our audit and assurance services provide independent verification of your financial information, building confidence with investors, lenders, and stakeholders. We combine technical expertise with industry knowledge to deliver valuable insights.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        From statutory audits to specialized reviews, we tailor our services to your specific needs while ensuring compliance with applicable standards.
+                    </p>
+                    <button class="bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors">
+                        Schedule Consultation
+                    </button>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/400?random=11" alt="Audit & Assurance Services" class="rounded-xl shadow-xl w-full">
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="bg-green-50 p-12 rounded-xl mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Our Audit & Assurance Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-file-alt text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Financial Statement Audits</h3>
+                        <p class="text-gray-600 mb-4">
+                            Full scope audits of financial statements performed in accordance with GAAS standards, providing the highest level of assurance.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Annual audits</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Interim audits</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Compliance verification</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-search text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Reviews & Compilations</h3>
+                        <p class="text-gray-600 mb-4">
+                            Lower-cost alternatives to audits with varying levels of assurance tailored to your needs and stakeholder requirements.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Review engagements</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Compilation services</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Agreed-upon procedures</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Forecasts & Projections</h3>
+                        <p class="text-gray-600 mb-4">
+                            Forward-looking financial analysis to support strategic planning, lending applications, and business valuations.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Revenue projections</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Cash flow forecasts</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Scenario analysis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-water text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Cash Flow Analysis</h3>
+                        <p class="text-gray-600 mb-4">
+                            Detailed cash flow analysis to identify trends, manage working capital, and plan for future capital needs.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Cash flow statements</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Working capital review</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Liquidity analysis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-microscope text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Operational Analysis</h3>
+                        <p class="text-gray-600 mb-4">
+                            In-depth analysis of business operations to identify improvement opportunities and enhance financial performance.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Efficiency reviews</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Cost analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Performance metrics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-search-plus text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Special Audits</h3>
+                        <p class="text-gray-600 mb-4">
+                            Specialized audit services for specific programs, grants, or compliance requirements including single audits.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Grant audits</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Program reviews</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i> Compliance audits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Why Choose Our Audit Services?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Stakeholder Confidence</h3>
+                            <p class="text-gray-600">Independent verification builds trust with investors, lenders, and other stakeholders.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Risk Identification</h3>
+                            <p class="text-gray-600">Discover financial risks and control weaknesses before they impact your business.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Compliance Assurance</h3>
+                            <p class="text-gray-600">Ensure your financial reporting meets all applicable accounting standards and regulations.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Expert Insights</h3>
+                            <p class="text-gray-600">Receive valuable recommendations for improving operations and financial management.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Flexible Services</h3>
+                            <p class="text-gray-600">Choose from audit, review, or compilation services based on your needs and budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Professional Standards</h3>
+                            <p class="text-gray-600">All work performed in accordance with professional auditing standards and best practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries We Serve -->
+            <div class="bg-gradient-to-r from-green-50 to-green-100 p-12 rounded-xl">
+                <h2 class="text-3xl font-bold text-dark mb-12 text-center">Industries We Serve</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-industry text-green-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark">Manufacturing</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-store text-green-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark">Retail & Distribution</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-building text-green-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark">Real Estate</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center">
+                        <i class="fas fa-heartbeat text-green-600 text-3xl mb-3"></i>
+                        <h3 class="font-bold text-dark">Healthcare</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-green-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Build Stakeholder Trust with Professional Audits</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Let our experienced auditors provide independent verification and valuable insights for your business.
+            </p>
+            <button class="bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                Schedule Audit Consultation
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">PRIMEACC</h4>
+                    <p class="text-gray-400 text-sm">Your committed financial advisor & business consulting partner</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <div class="space-y-2">
+                        <!-- CFO + Client Advisory -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                CFO Advisory
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="cfo-advisory.html#strategic-finance" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Strategic Finance</a>
+                                <a href="cfo-advisory.html#financial-reporting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Reporting</a>
+                                <a href="cfo-advisory.html#process-optimization" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Process Optimization</a>
+                                <a href="cfo-advisory.html#cash-flow-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Management</a>
+                                <a href="cfo-advisory.html#ma-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">M&A Advisory</a>
+                                <a href="cfo-advisory.html#financial-advisory" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Advisory</a>
+                            </div>
+                        </div>
+
+                        <!-- Audit & Assurance -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Audit & Assurance
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="audit-assurance.html#financial-statement-audits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Statement Audits</a>
+                                <a href="audit-assurance.html#reviews-compilations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Reviews & Compilations</a>
+                                <a href="audit-assurance.html#forecasts-projections" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Forecasts & Projections</a>
+                                <a href="audit-assurance.html#cash-flow-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Cash Flow Analysis</a>
+                                <a href="audit-assurance.html#operational-analysis" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Operational Analysis</a>
+                                <a href="audit-assurance.html#special-audits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Audits</a>
+                            </div>
+                        </div>
+
+                        <!-- Tax -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Tax
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="tax-services.html#tax-planning" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Planning</a>
+                                <a href="tax-services.html#tax-prep-compliance" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Preparation & Compliance</a>
+                                <a href="tax-services.html#tax-structuring" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Structuring</a>
+                                <a href="tax-services.html#international-tax" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">International Tax</a>
+                                <a href="tax-services.html#tax-controversy" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Tax Controversy</a>
+                                <a href="tax-services.html#payroll-employment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Payroll & Employment Taxes</a>
+                            </div>
+                        </div>
+
+                        <!-- Family Office -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Family Office
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="family-office.html#wealth-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Wealth Management</a>
+                                <a href="family-office.html#financial-operations" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Financial Operations</a>
+                                <a href="family-office.html#estate-trust" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Estate & Trust Planning</a>
+                                <a href="family-office.html#charitable-planning" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Charitable Planning</a>
+                                <a href="family-office.html#advisor-coordination" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Advisor Coordination</a>
+                                <a href="family-office.html#risk-management" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Risk Management</a>
+                            </div>
+                        </div>
+
+                        <!-- Employment -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Employment
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="employment-services.html#job-placement" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Job Placement</a>
+                                <a href="employment-services.html#talent-recruitment" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Talent Recruitment</a>
+                                <a href="employment-services.html#career-consulting" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Career Consulting</a>
+                                <a href="employment-services.html#executive-search" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Executive Search</a>
+                                <a href="employment-services.html#professional-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Professional Development</a>
+                                <a href="employment-services.html#ongoing-support" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Ongoing Support</a>
+                            </div>
+                        </div>
+
+                        <!-- Real Estate -->
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white text-sm w-full text-left flex items-center justify-between hover:bg-gray-700 px-2 py-1 rounded">
+                                Real Estate
+                                <i class="fas fa-chevron-down text-xs ml-2 group-hover:rotate-180 transition-transform duration-200"></i>
+                            </button>
+                            <div class="hidden group-hover:block absolute right-0 mt-0 bg-gray-800 rounded shadow-lg z-10 w-44">
+                                <a href="real-estate-services.html#residential" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Residential Real Estate</a>
+                                <a href="real-estate-services.html#commercial" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Commercial Real Estate</a>
+                                <a href="real-estate-services.html#industrial" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Industrial Real Estate</a>
+                                <a href="real-estate-services.html#land-development" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Land & Development</a>
+                                <a href="real-estate-services.html#special-purpose" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Special Purpose Properties</a>
+                                <a href="real-estate-services.html#investment-strategies" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 text-xs">Investment Strategies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="mailto:info@primeaccconsulting.com" class="hover:text-white">info@primeaccconsulting.com</a></li>
+                        <li><a href="tel:+19302772877" class="hover:text-white">(930) 277-2877</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                &copy; 2026 PRIMEACC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
